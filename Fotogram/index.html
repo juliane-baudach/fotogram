@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotogram</title>
+    <link rel="icon" type="image/png" href="./img/logo-favicon.png">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <img class="logo" src="./img/logo.png" alt="Fotogram Logo">
+        </div>
+    </header>
+
+    <div class="content">
+
+        <main>
+
+            <h1 class="title">Dein persönliches Fotoalbum</h1>
+
+            <div class="gallery">
+                <button type="button" class="gallery-button"><img src="./img/bird-preview.jpg" data-full="./img/bird.jpg" alt="ein schwarzer Vogel sitzt auf einem Ast" data-title="Vogel-810433_1280"></button>
+                <button type="button" class="gallery-button"><img src="./img/cat-preview.jpg" data-full="./img/cat.jpg" alt="Katze liegt auf dem Rücken" data-title="Katze-810434_1248"></button>
+                <button type="button" class="gallery-button"><img src="./img/donkey-preview.jpg" data-full="./img/donkey.jpg" alt="ein Esel liegt auf einer Wiese" data-title="Esel_810435_1348"></button>
+                <button type="button" class="gallery-button"><img src="./img/duck-preview.jpg" data-full="./img/duck.jpg" alt="ein Entenkopf" data-title="Ente-810435_7896"></button>
+                <button type="button" class="gallery-button"><img src="./img/giraffe-preview.jpg" data-full="./img/giraffe.jpg" alt="ein Giraffenkopf" data-title="Giraffe-812436_1475"></button>
+                <button type="button" class="gallery-button"><img src="./img/grasshopper-preview.jpg" data-full="./img/grasshopper.jpg" alt="ein Grashüpfer im Gras" data-title="Grashüpfer-87125_4856"></button>
+                <button type="button" class="gallery-button"><img src="./img/herons-preview.jpg" data-full="./img/herons.jpg" alt="ein Fischreiher steht an einem See" data-title="Fischreiher-78542_8765"></button>
+                <button type="button" class="gallery-button"><img src="./img/horse-preview.jpg" data-full="./img/horse.jpg" alt="ein weißes Pferd frisst Gras auf einer Wiese"
+                    data-title="Pferd-52443_5248"></button>
+                <button type="button" class="gallery-button"><img src="./img/rabbit-preview.jpg" data-full="./img/rabbit.jpg" alt="ein Hase sitzt auf dem Waldboden" data-title="Hase-69582_3256"></button>
+                <button type="button" class="gallery-button"><img src="./img/squirrel-preview.jpg" data-full="./img/squirrel.jpg" alt="ein Eichhörnchen rennt über das Gras"
+                    data-title="Eichhörnchen-15236_4521"></button>
+                <button type="button" class="gallery-button"><img src="./img/wolf-preview.jpg" data-full="./img/wolf.jpg" alt="zwei Wolfsjungen spielen miteinander" data-title="Wolf-52122_0212"></button>
+                <button type="button" class="gallery-button"><img src="./img/lion-preview.jpg" data-full="./img/lion.jpg" alt="ein Löwe schleckt sich das Maul" data-title="Löwe-03265_6321"></button>
+            </div>
+        </main>
+    </div>
+
+    <dialog id="image-dialog" aria-labelledby="img-title">
+        <div class="dialog-content">
+            <div class="img-content">
+                <p id="img-title">Vogel-810433_1280</p>
+                <button type="button" aria-label="Dialog schließen" id="close-dialog">X</button>
+            </div>
+
+            <img src="./img/bird.jpg" alt="ein schwarzer Vogel sitzt auf einem Ast">
+
+            <div class="arrows">
+                <button type="button" aria-label="Vorheriges Bild" class="arrow-left">
+                    <img src="./img/arrow-left.png" alt="">
+                </button>
+
+                <p id="image-counter">1 / 12</p>
+
+                <button type="button" aria-label="Nächstes Bild" class="arrow-right">
+                    <img src="./img/arrow-right.png" alt="">
+                </button>
+            </div>
+        </div>
+    </dialog>
+
+    <footer>
+        <div class="footer-content">
+            <img class="logo-footer" src="./img/logo.png" alt="Fotogram Logo">
+            <p class="copy">&copy; 2026 Juliane Baudach</p>
+        </div>
+
+        <img class="image-footer" src="./img/img-footer.png" alt="">
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
